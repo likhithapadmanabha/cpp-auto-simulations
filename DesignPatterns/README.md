@@ -3,7 +3,8 @@
 This folder contains small, runnable examples of common patterns with brief explanations.
 
 - `singleton_audio_demo.cpp` — Singleton using a mock `AudioManager` (infotainment style).
-- More patterns to add later: Factory, Observer, Strategy…
+- "playList" is the shared resource between gps and music threads, hence we are using mutex to handle the race condition.
+- in real time infotainment systmes only one AudioManager will be used to handle the audio, hence we have used Singleton design pattern.
 
 ## Build
 ```bash
