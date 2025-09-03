@@ -18,3 +18,10 @@ Only controlled methods can change it.
 ***********ABSTRACTION***********
 User calls increaseVolume() / decreaseVolume()
 They don’t care about applyVolumeToAmplifier() (hidden low-level logic).
+
+***********RAW POINTERS***********
+Here I have tried to cover the below topics:
+--> Passing pointers to functions → process(int* p).
+--> Passing reference to pointer → clear(int*& p).
+--> Memory Leak → forgetting to delete.
+--> Dangling Pointer → accessing memory after delete.
