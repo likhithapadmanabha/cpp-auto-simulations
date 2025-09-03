@@ -1,5 +1,5 @@
 
-//DYNAMIC POLYMORPHISM
+***********DYNAMIC POLYMORPHISM***********
 This code demonstrates dynamic polymorphism in C++ using a vehicle alert system.
 Different alerts (Seatbelt, Door, Handbrake) are implemented as derived classes of a common Notification interface.
 At runtime, the system decides which alert to show based on simulated sensor event
@@ -11,10 +11,10 @@ Note: virtual ~Notification() = default;
       That’s why both derived and base destructors get executed in the right order.
 
 
-//ENCAPSULATION
+***********ENCAPSULATION***********
 volume is private → can’t directly set to -999.
 Only controlled methods can change it.
 
-//ABSTRACTION
+***********ABSTRACTION***********
 User calls increaseVolume() / decreaseVolume()
 They don’t care about applyVolumeToAmplifier() (hidden low-level logic).
